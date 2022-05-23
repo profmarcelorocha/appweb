@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Exercício 05</title>
+	<style>
+		#id_header, #id_footer {
+			background-color: #232323;
+		}
+		h1 {
+			color: crimson;
+		}
+		a, h2, h3 {
+			color: white;
+		}
+		img {
+			width: 35px;
+			height: 35px;
+		}
+	</style>
+</head>
+<body>
+    <div id="id_header">
+        <div>
+            <h2>Menu</h2>
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Cadastro</a>
+    </div>
+    <div>
+        <img src="https://saobras.al.gov.br/cpl/img/login.png"
+            alt="">
+        <h1>Cadastro</h1>
+    </div>
+    <div>
+        <label>Nome:
+            <input type="text" id="nome">
+        </label>
+        <label>Pai:
+            <input type="text" id="pai">
+        </label>
+        <label>Mãe:
+            <input type="text" id="mae">
+        </label>
+        <button type="button" onclick="mostrar()">ENVIAR</button>
+    </div>
+    <div id="id_footer">
+        <h3>Desenvolvido por X</h3>
+    </div>
+    <script>
+        function mostrar () {
+            var nome = document.getElementById("nome").value
+            alert(nome)
+        }
+    </script>
+</body>
+</html>
